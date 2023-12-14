@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sidebar img{
+    width: 100%;
+    height: 350px;
+    
+    border: 2px groove maroon;
+    border-left-width: 20px;
+    border-right-width: 20px;
+    border-width: 20px;
+    
+    
+    
+    
+}
+.sidebar{
+     width: 300px;
+     height: auto;
+     margin: 5px;
+     background-color: rgb(0, 0, 0);
+     
+     
+     
+     
+}
+.nav{
+    width: 100%;
+    height: 50px;
+    background-color:maroon;
+    display: inline-block;
+    position: sticky;
+    top: 0px;
+    
+}
+.nav ul{
+    display: flex;
+    list-style-type: none;
+    
+    
+}
+.nav ul li{
+    justify-content: space-around;
+    margin-left: 20px;
+    padding: 5px;
+    
+}
+.nav ul li a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.profile{
+    background-color: maroon;
+    font-weight: bolder;
+   
+}
+.faprofile{
+    display: inline-block;
+    font-size: 40px;
+    margin-right: 5px;
+    
+    
+    
+}
+.profilecontent h2{
+   text-align: center;
+   color: whitesmoke;
+   margin: 5px;
+   text-decoration: underline;
+}
+.profilecontent{
+    border: 20px groove maroon;
+    margin-top: 3px;
+    
+}
+.profilecontent p{
+    color: whitesmoke;
+    text-align: justify;
+    padding: 5px;
+}
+
+  
+
+
+
+.contentcol{
+    width: 100%;
+    height: auto;
+    margin: 5px;
+    background-color: rgb(0, 0, 0);
+    
+    
+}
+
+.mainrow{
+    display: flex;
+    overflow: auto;
+}
+#video img{
+    width: 1200px;
+    margin: 8px;
+    
+}
+#profile h1{
+    text-align: center;
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+#company h1{
+    color: whitesmoke;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+.microsoft{
+    
+    display: flex;
+    
+}
+.microsoft img{
+    margin: 10px;
+    width: 500px;
+}
+.cheading1{
+    text-align: center;
+    margin: 10px;
+    color:black;
+    background: linear-gradient(to top,rgb(255,255,255)50%,rgb(0,0,0)50%);
+    background-size: 100% 200%;
+    transition: all 0.8s;
+
+}
+.cheading1 h3{
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.microsoft p{
+    margin: 10px;
+    margin-top: 10px;
+    text-align: justify;
+    color: black;
+}
+
+.cheading1:hover{
+    background-position:right bottom;
+    
+    
+}
+.cheading2{
+    text-align: center;
+    margin: 10px;
+    color: black;
+    background: linear-gradient(to top,rgb(255,255,255)50%,rgb(0,0,0)50%);
+    background-size: 100% 200%;
+    transition: all 0.8s;
+
+}
+.cheading2:hover{
+        background-position: right bottom;
+}
+.berkshire img{
+    
+    margin: 10px;
+}
+.berkshire{
+    display: flex;
+}
+.berkshire p{
+    text-align: justify;
+    margin: 10px;
+}
+.cheading2 h3{
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.footer{
+    background-color: maroon;
+    margin: 5px;
+
+}
+.footer ul{
+    margin-right: 40px;
+    display: flex;
+    
+    color: white;
+    justify-content: center;
+    font-size: larger;
+    list-style-type: none;
+}
+.footer ul li{
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+   margin-left: 10px;  
+   font-size: larger;
+    
+}
+.footer h3{
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+/* media query */
+@media all and (max-width:600px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .sidebar{
+        width: 100px;
+        background-color: black;
+        margin-right:2px
+    }
+    .sidebar img{
+        width: 100px;
+        height: 100px;
+        border: 1px groove maroon;
+        border-width: 2px;
+
+    }
+    .profile{
+        width: 100px;
+        height: auto;
+    }
+    .profile h1{
+        font-size: 15px;
+    }
+    .profile span{
+        font-size: 20px;
+    }
+    .profilecontent{
+        width: 100px;
+        border: 1px groove maroon;
+    }
+    .profilecontent h2{
+        font-size: 12px;
+        
+    }
+    .profilecontent p{
+        font-size: 10px;
+        text-align: justify;
+    }
+    .contentcol{
+        width: 485px;
+        margin: 2px;
+        
+    }
+    .nav{
+        width: 485px;
+    }
+    .nav ul li a:hover{
+        color: black;
+    }
+    #video img{
+        width: 470px;
+    }
+    #company h1{
+        font-size: 20px;
+    }
+    .cheading1 h3{
+        font-size: 10px;
+        color: whitesmoke;
+    }
+    .microsoft{
+        width: 485px;
+        flex-direction: column;
+    }
+    .microsoft img{
+        width:450px ;
+    }
+    .microsoft p{
+        font-size: small;
+        color: whitesmoke;
+        padding-right: 15px;
+        padding-left:3px ;
+        text-align: justify;
+    }
+    .cheading1{
+        
+        background-color: black;
+        background: none;
+        border: 1px white solid;
+    }
+    .cheading1:hover{
+        border: 1px solid maroon;
+        transition: all 0.5s;
+    }
+    /* cheading2 */
+    .cheading2 h3{
+        font-size: 10px;
+        color: whitesmoke;
+        
+    }
+    .berkshire p{
+        font-size: small;
+        color: whitesmoke;
+        padding-right: 15px;
+        padding-left:3px ;
+        text-align: justify;
+       
+        
+    }
+    .berkshire img{
+        width: 450px;
+    }
+    .berkshire{
+        flex-direction: column-reverse;
+    }
+    .cheading2{
+        background: none;
+        background-color: black;
+        background: none;
+        border: 1px solid white;
+    }
+    .cheading2:hover{
+        border: 1px maroon solid;
+    }
+    /* footer */
+    .footer{
+        width: 585px;
+        
+    }
+    .footer h3{
+        font-size: 10px;
+    }
+    .footer ul li{
+        font-size: small;
+    }
+
+    
+}
+
